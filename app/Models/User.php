@@ -8,10 +8,11 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Laravel\Scout\Searchable;
+use Kyslik\ColumnSortable\Sortable;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable, Searchable;
+    use HasApiTokens, HasFactory, Notifiable, Searchable, Sortable;
 
     /**
      * The attributes that are mass assignable.
@@ -50,8 +51,9 @@ class User extends Authenticatable
             'name'=> $this->name,
             'email'=> $this->email,
             'gender'=> $this->gender,  
-            'age'=> $this->age,
-            
+            'age'=> $this->age,  
         ];
     }
+
+    // public $sortable = ['id', 'name', 'email', 'gender', 'age','created_at', 'updated_at'];
 }

@@ -47,6 +47,14 @@
    <th>Age</th>
    <th width="375px">Action</th>
  </tr>
+
+ {{-- <th width="80px">@sortablelink('id')</th>
+<th>No</th>
+<th>@sortablelink('name')</th>
+<th>@sortablelink('email')</th>
+<th>@sortablelink('age')</th>
+<th>@sortablelink('gender')</th> --}}
+
  @foreach ($data as $key => $user)
   <tr>
     <td>{{ ++$i }}</td>

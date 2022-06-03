@@ -10270,4 +10270,14 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+  
 }
+
+#carouselSlider{
+  width: 800px;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
